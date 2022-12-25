@@ -6,7 +6,7 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.6;
   background: radial-gradient(circle at 18.7% 37.8% , rgb(255, 255, 255) 0%, rgb(238,246,255) 90%);
-  background: linear-gradient(96.2deg, rgb(23,39,59) 10.4%, rgb(17,25,38) 43.8%, rgb(34,33,49) 105.8%);
+  background: linear-gradient(96.2deg, rgb(23,39,59) 10.4%, rgb(17,25,38) 43.8%, rgb(46,33,49) 105.8%);
   color: rgb(244, 244, 244);
 }
 
