@@ -2,6 +2,7 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link';
 import Image from 'next/image'
+import { Button } from '@nextui-org/react';
 
 export default function Home() {
 
@@ -20,8 +21,7 @@ export default function Home() {
           <br />
           <p className={styles.introduce2}>Since beginning my journey as a freelance developer nearly 10 years ago, I’ve done remote work for agencies, consulted for startups, and collaborated with talented people to create web products for both business and consumer use.
             Since beginning my journey as a freelance developer nearly 10 years ago, I’ve done remote work for agencies, consulted for startups, and collaborated with talented people to create web products for both business and consumer use.</p>
-          <a href="/" className="bi bi-arrow-left"></a>
-          <a href="resume.pdf" className="bi bi-file-earmark-fill">  resume</a>
+            <Link href="resume.pdf" ><Button > <i className="bi bi-github"/>  Resume</Button></Link>
         </div>
 
       </main>
