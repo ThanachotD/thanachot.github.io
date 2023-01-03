@@ -1,8 +1,10 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link';
+import Image from 'next/image'
 
 export default function Home() {
+
   return (
     <div className={styles.container}>
       <Head>
@@ -11,8 +13,17 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <h1 className={styles.title}>Projects</h1>
-        <Link href='/'>next</Link>
+
+        <div className={styles.description}>
+
+          <h1 className={styles.title}>Skills & Experience</h1>
+          <br />
+          <p className={styles.introduce2}>Since beginning my journey as a freelance developer nearly 10 years ago, I’ve done remote work for agencies, consulted for startups, and collaborated with talented people to create web products for both business and consumer use.
+            Since beginning my journey as a freelance developer nearly 10 years ago, I’ve done remote work for agencies, consulted for startups, and collaborated with talented people to create web products for both business and consumer use.</p>
+          <a href="/" className="bi bi-arrow-left"></a>
+          <a href="resume.pdf" className="bi bi-file-earmark-fill">  resume</a>
+        </div>
+
       </main>
     </div>
   )
