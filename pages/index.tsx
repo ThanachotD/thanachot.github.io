@@ -35,12 +35,12 @@ export default function Home() {
             and opportunities to make innovation. </p>
           <p className={styles.introduce}>
             contact me Thanachot.won@gmail.com </p>
-          <a href="https://github.com/ThanachotD" className="bi bi-github"></a>
-          <a href="https://www.linkedin.com/in/thanachot-wongmetin-94bb49210/" className="bi bi-linkedin"></a>
-          <a href="https://www.facebook.com/profile.php?id=100005890065983" className="bi bi-facebook"></a>
-          <a onClick={() => router.push('mailto:Thanachot.won@gmail.com')} className="bi bi-envelope-fill"></a>
+          <Link href="https://github.com/ThanachotD" ><i className="bi bi-github"/></Link>
+          <Link href="https://www.linkedin.com/in/thanachot-wongmetin-94bb49210/" ><i className="bi bi-linkedin"/></Link>
+          <Link href="https://www.facebook.com/profile.php?id=100005890065983" ><i className="bi bi-facebook"/></Link>
+          <a className="bi bi-envelope-fill" onClick={() => router.push('mailto:Thanachot.won@gmail.com')}></a>
           {/*<a href='resume.pdf'>resume</a> */}
-    
+
         </div>
         <Link href="/projects" className={styles.btn}>Skills & Experience &rarr; </Link>
 
