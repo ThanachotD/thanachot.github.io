@@ -1,4 +1,4 @@
-import { useState, useCallback, useEffect } from 'react';
+import React, { useState, useCallback, useEffect } from 'react';
 
 
 export const useMediaQuery = (width) => {
@@ -14,7 +14,9 @@ export const useMediaQuery = (width) => {
     media.addEventListener('change', updateTarget)
 
     // Check on mount (callback is not called until a change occurs)
+    if (media.matches) setTargetReached(true)
 
+    return () => media.removeEventListener('change', updateTarget)
   }, [])
 
   return targetReached
