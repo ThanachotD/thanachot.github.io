@@ -6,12 +6,7 @@ import React, { useState } from 'react';
 import Image from 'next/image'
 
 export default function Home() {
-  const [numPages, setNumPages] = useState(null);
-  const [pageNumber, setPageNumber] = useState(1);
   const router = useRouter()
-  function onDocumentLoadSuccess({ numPages }: any) {
-    setNumPages(numPages);
-  }
   return (
     <>
       <Head>
