@@ -14,10 +14,10 @@ export const useMediaQuery = (width) => {
     media.addEventListener('change', updateTarget)
 
     // Check on mount (callback is not called until a change occurs)
-    if (media.matches) setTargetReached(true)
+    //if (media.matches) setTargetReached(true)
 
-    return () => media.removeEventListener('change', updateTarget)
-  }, [])
+    //return () => media.removeEventListener('change', updateTarget)
+  })
 
   return targetReached
 }

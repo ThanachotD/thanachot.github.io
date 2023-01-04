@@ -2,16 +2,18 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import { useMediaQuery } from './useMediaQuery.js'
 import { Card, Grid, Text, Link, Button, Container, Row, Col, Spacer } from "@nextui-org/react";
+import Image from 'next/image'
 
 const Card4 = () => (
   <Card css={{ p: "$6", mw: "400px" }}>
     <Card.Header>
-      <img
-        alt="nextui logo"
-        src="https://avatars.githubusercontent.com/u/86160567?s=200&v=4"
-        width="55px"
-        height="55px"
+      <Image
+        src="/profile_Thanachot.jpg"
+        alt="Picture of the author"
+        width={55}
+        height={55}
       />
+
       <Grid.Container css={{ pl: "$6" }}>
         <Grid xs={12}>
           <Text h4 css={{ lineHeight: "$xs" }}>
@@ -42,12 +44,12 @@ const Card4 = () => (
 );
 const MockItem = ({ text }: any) => {
   return (
-    <img
-      alt="nextui logo"
-      src="https://avatars.githubusercontent.com/u/86160567?s=200&v=4"
-      width="100%"
-      height="100%"
-    />
+    <Image
+        src="/profile_Thanachot.jpg"
+        alt="Picture of the author"
+        width={55}
+        height={55}
+      />
   );
 };
 function App() {
