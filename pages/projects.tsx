@@ -45,11 +45,11 @@ const Card4 = () => (
 const MockItem = ({ text }: any) => {
   return (
     <Image
-        src="/profile_Thanachot.jpg"
-        alt="Picture of the author"
-        width={55}
-        height={55}
-      />
+      src="/profile_Thanachot.jpg"
+      alt="Picture of the author"
+      width={55}
+      height={55}
+    />
   );
 };
 function App() {
@@ -85,6 +85,7 @@ function App() {
 function Home() {
   const isMd = true;
   const isSm = false;
+  return (
     <div className={styles.container}>
       <Head>
         <title>My Project</title>
@@ -103,38 +104,13 @@ function Home() {
               <Link href="/" ><Button className={styles.btn2} > &larr;  Back</Button></Link>
             </div>
           </Row>
-          <Row gap={1} style={{ justifyContent: 'center' }}>
-            <Grid.Container gap={2} justify="center">
-              {isMd ? <><Grid xs={12} >
-                <Card4 />
-              </Grid>
-                <Grid xs={12} >
-                  <Card4 />
-                </Grid>
-                <Grid xs={12} >
-                  <Card4 />
-                </Grid>
-                <Grid xs={12} >
-                  <Card4 />
-                </Grid></> : <><Grid xs={3} >
-                  {isMd ? <MockItem /> : <Card4 />}
-                </Grid>
-                <Grid xs={3} >
-                  {isMd ? <MockItem /> : <Card4 />}
-                </Grid>
-                <Grid xs={3} >
-                  {isMd ? <MockItem /> : <Card4 />}
-                </Grid>
-                <Grid xs={3} >
-                  {isMd ? <MockItem /> : <Card4 />}
-                </Grid></>}
-            </Grid.Container>
-          </Row>
+          
 
         </Container>
       </main>
 
     </div>
+  )
 }
 
 export default Home;
