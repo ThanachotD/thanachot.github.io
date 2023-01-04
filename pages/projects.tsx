@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import { useMediaQuery } from './useMediaQuery.js'
+
 import { Card, Grid, Text, Link, Button, Container, Row, Col, Spacer } from "@nextui-org/react";
 import Image from 'next/image'
 
@@ -83,9 +83,8 @@ function App() {
 }
 
 function Home() {
-  const isMd = useMediaQuery(960);
-  const isSm = useMediaQuery(400);
-  return (
+  const isMd = true;
+  const isSm = false;
     <div className={styles.container}>
       <Head>
         <title>My Project</title>
@@ -136,7 +135,6 @@ function Home() {
       </main>
 
     </div>
-  )
 }
 
 export default Home;
