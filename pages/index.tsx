@@ -3,7 +3,7 @@ import styles from '../styles/Home.module.css'
 import Link from 'next/link';
 import { useRouter } from 'next/router'
 import React, { useState } from 'react';
-import { Button } from '@nextui-org/react';
+import Image from 'next/image'
 
 export default function Home() {
   const [numPages, setNumPages] = useState(null);
@@ -22,29 +22,35 @@ export default function Home() {
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"></link>
       </Head>
       <main className={styles.main}>
-        <img src="profile.jpg"
-          alt="..." className={styles.profile} />
-        <h1 className={styles.title}>
-          Thanachot Wongmetin
-        </h1>
-        <div className={styles.description}>
-          <code className={styles.code}>Software Engineer · UX/UI Design · Photographer </code>
-          <p className={styles.introduce}>
-            I am passionate about designing user interfaces and user experiences,
-            and I also have a strong background in software engineering.I am always looking for new challenges
-            and opportunities to make innovation. </p>
-          <p className={styles.introduce}>
-            contact me Thanachot.won@gmail.com </p>
-          <Link href="https://github.com/ThanachotD" ><i className="bi bi-github"/></Link>
-          <Link href="https://www.linkedin.com/in/thanachot-wongmetin-94bb49210/" ><i className="bi bi-linkedin"/></Link>
-          <Link href="https://www.facebook.com/profile.php?id=100005890065983" ><i className="bi bi-facebook"/></Link>
-          <a className="bi bi-envelope-fill" onClick={() => router.push('mailto:Thanachot.won@gmail.com')}></a>
-          {/*<a href='resume.pdf'>resume</a> */}
+        <Image
+          className={styles.profile}
+          src="/profile_Thanachot.jpg"
+          alt="Picture of the author"
+          width={500}
+          height={500}
+        />
+      <h1 className={styles.title}>
+        Thanachot Wongmetin
+      </h1>
+      <div className={styles.description}>
+        <code className={styles.code}>Software Engineer · UX/UI Design · Photographer </code>
+        <p className={styles.introduce}>
+          I am passionate about designing user interfaces and user experiences,
+          and I also have a strong background in software engineering.I am always looking for new challenges
+          and opportunities to make innovation. </p>
+        <p className={styles.introduce}>
+          contact me Thanachot.won@gmail.com </p>
 
-        </div>
-        <Link href="/projects" className={styles.btn}>Skills & Experience &rarr; </Link>
+        <Link href="https://github.com/ThanachotD" ><i className="bi bi-github" /></Link>
+        <Link href="https://www.linkedin.com/in/thanachot-wongmetin-94bb49210/" ><i className="bi bi-linkedin" /></Link>
+        <Link href="https://www.facebook.com/profile.php?id=100005890065983" ><i className="bi bi-facebook" /></Link>
+        <a className="bi bi-envelope-fill" onClick={() => router.push('mailto:Thanachot.won@gmail.com')}></a>
+        {/*<a href='resume.pdf'>resume</a> */}
 
-      </main>
+      </div>
+      <Link href="/projects" className={styles.btn}>Skills & Experience &rarr; </Link>
+
+    </main>
     </>
   )
 }

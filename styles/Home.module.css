@@ -141,6 +141,32 @@
   background-color: #ffffff;
 }
 
+.btn2 {
+  padding: 1rem;
+  text-align: left;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  transition: all .2s ease-in-out;
+  background-color: #162B45;
+}
+
+.btn2:hover,
+.btn2:focus,
+.btn2:active {
+  border-color: #1B1A1A;
+  padding: 1rem;
+  text-align: left;
+  color: #1B1A1A;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  max-width: 300px;
+  transform: scale(0.9);
+  background-color: #ffffff;
+}
+
 .card {
   margin: 1rem;
   padding: 4.5rem;
@@ -226,6 +252,15 @@
     width: 100%;
   }
 }
+@media (max-width: 1000px) { 
+  .description {
+    margin: 0rem 0rem 0rem 0rem;
+    line-height: 1.5;
+    font-size: 1.5rem;
+    width: 100%;
+  }
+}
+
 
 @media (prefers-color-scheme: dark) {
 
