@@ -171,16 +171,17 @@
 .btn2:hover,
 .btn2:focus,
 .btn2:active {
-  border-color: #1B1A1A;
-  padding: 1rem;
+  padding: .5rem;
+  font-size: 0.8rem;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
   text-align: left;
-  color: #1B1A1A;
+  color: #fff;
   text-decoration: none;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
-  transform: scale(0.9);
-  background-color: #ffffff;
+  transition: all .2s ease-in-out;
+  background-color: #4F3154;
 }
 
 .card {
@@ -364,6 +365,7 @@
     width: 100%;
     flex-direction: column;
   }
+
   .main {
     min-height: 100vh;
     padding: 5rem 2rem;
