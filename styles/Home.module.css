@@ -1,5 +1,3 @@
-
-
 .container {
   padding: 0 2rem;
 }
@@ -57,10 +55,12 @@
   font-size: 1.5rem;
   width: 35%;
 }
-.description a{
+
+.description a {
   margin: 0.5rem;
   border-radius: 10%;
 }
+
 .description a:hover,
 .description a:focus,
 .description a:active {
@@ -69,11 +69,12 @@
   transition: color 0.15s ease, border-color 0.15s ease;
   transform: scale(1.1);
 }
+
 .code {
   padding: 0.15rem;
   font-size: 0.9rem;
   background-color: transparent;
-  color:white;
+  color: white;
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Courier New, monospace;
 }
@@ -85,6 +86,18 @@
     Bitstream Vera Sans Mono, Courier New, monospace;
   text-align: center;
   color: darkgrey;
+}
+
+.iconround {
+  margin: 1rem;
+  padding: 1rem;
+  text-align: left;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  transition: all .2s ease-in-out;
+  background-color: #162B45;
 }
 
 .introduce2 {
@@ -142,7 +155,10 @@
 }
 
 .btn2 {
-  padding: 1rem;
+  padding: .5rem;
+  font-size: 0.8rem;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
   text-align: left;
   color: white;
   text-decoration: none;
@@ -236,6 +252,7 @@
     justify-content: center;
     align-items: center;
   }
+
   .profile {
     width: 7rem;
     height: 7rem;
@@ -245,6 +262,7 @@
     -webkit-filter: grayscale(100%);
     filter: grayscale(30%);
   }
+
   .description {
     margin: 0rem 0rem 2rem 0rem;
     line-height: 1.5;
@@ -252,7 +270,8 @@
     width: 100%;
   }
 }
-@media (max-width: 1000px) { 
+
+@media (max-width: 1000px) {
   .description {
     margin: 0rem 0rem 0rem 0rem;
     line-height: 1.5;
