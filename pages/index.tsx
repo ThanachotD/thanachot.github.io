@@ -84,7 +84,7 @@ export default function App() {
         <meta name="firstpage" content="introduce myself by thanachot" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/thanachot.ico" />
-        
+        <meta name="description" content="A web portfolio is a digital collection showcasing professional or creative skills, experiences, and achievements. It is presented on a website and can include resumes and work samples. It is used to showcase abilities and accomplishments to potential employers, clients, or partners."></meta>
       </Head>
       <main className={styles.main}>
 
@@ -134,26 +134,26 @@ export default function App() {
           <Container gap={1} wrap={'wrap'}>
             <Row gap={0} style={{ justifyContent: 'center' }} >
               <Grid.Container gap={2} css={{ color: "$text", marginTop: "$1" }} justify={'center'}>
-                <Grid> <Avatar squared icon={<SiReact />} /></Grid>
-                <Grid><Avatar squared icon={<SiNextdotjs />} /></Grid>
-                <Grid> <Avatar squared icon={<FaNodeJs />} /></Grid>
-                <Grid><Avatar squared icon={<SiGoland />} /></Grid>
-                <Grid> <Avatar squared icon={<SiPython />} /></Grid>
-                <Grid><Avatar squared icon={<SiJava />} /></Grid>
-                <Grid> <Avatar squared icon={<SiTypescript />} /></Grid>
-                <Grid><Avatar squared icon={<SiLaravel />} /></Grid>
-                <Grid> <Avatar squared icon={<SiMysql />} /></Grid>
-                <Grid><Avatar squared icon={<SiMongodb />} /></Grid>
-                <Grid> <Avatar squared icon={<SiFirebase />} /></Grid>
-                <Grid> <Avatar squared icon={<SiPostman />} /></Grid>
-                <Grid> <Avatar squared icon={<SiDocker />} /></Grid>
-                <Grid> <Avatar squared icon={<SiUbuntu />} /></Grid>
-                <Grid> <Avatar squared icon={<SiAndroidstudio />} /></Grid>
-                <Grid> <Avatar squared icon={<SiBootstrap />} /></Grid>
-                <Grid> <Avatar squared icon={<SiHtml5 />} /></Grid>
-                <Grid> <Avatar squared icon={<SiCss3 />} /></Grid>
-                <Grid> <Avatar squared icon={<SiPhp />} /></Grid>
-                <Grid> <Avatar squared icon={<SiFigma />} /></Grid>
+                <Grid> <Avatar squared icon={<SiReact />} alt="Icon for react" /></Grid>
+                <Grid><Avatar squared icon={<SiNextdotjs />} alt="Icon for next.js" /></Grid>
+                <Grid> <Avatar squared icon={<FaNodeJs />} alt="Icon for Node.js" /></Grid>
+                <Grid><Avatar squared icon={<SiGoland />} alt="Icon for Golang" /></Grid>
+                <Grid> <Avatar squared icon={<SiPython />} alt="Icon for Python" /></Grid>
+                <Grid><Avatar squared icon={<SiJava />} alt="Icon for Java" /></Grid>
+                <Grid> <Avatar squared icon={<SiTypescript />} alt="Icon for Typescript" /></Grid>
+                <Grid><Avatar squared icon={<SiLaravel />} alt="Icon for Laravel" /></Grid>
+                <Grid> <Avatar squared icon={<SiMysql />} alt="Icon for MySQL" /></Grid>
+                <Grid><Avatar squared icon={<SiMongodb />} alt="Icon for MongoDB" /></Grid>
+                <Grid> <Avatar squared icon={<SiFirebase />} alt="Icon for Firebase" /></Grid>
+                <Grid> <Avatar squared icon={<SiPostman />} alt="Icon for Postman" /></Grid>
+                <Grid> <Avatar squared icon={<SiDocker />} alt="Icon for Docker" /></Grid>
+                <Grid> <Avatar squared icon={<SiUbuntu />} alt="Icon for Ubuntu" /></Grid>
+                <Grid> <Avatar squared icon={<SiAndroidstudio />} alt="Icon for Androidstudio" /></Grid>
+                <Grid> <Avatar squared icon={<SiBootstrap />} alt="Icon for Boostrap" /></Grid>
+                <Grid> <Avatar squared icon={<SiHtml5 />} alt="Icon for HTML5" /></Grid>
+                <Grid> <Avatar squared icon={<SiCss3 />} alt="Icon for CSS3" /></Grid>
+                <Grid> <Avatar squared icon={<SiPhp />} alt="Icon for Php" /></Grid>
+                <Grid> <Avatar squared icon={<SiFigma />} alt="Icon for Figma" /></Grid>
               </Grid.Container>
             </Row>
             <br />
@@ -165,12 +165,14 @@ export default function App() {
             <Row gap={0} style={{ justifyContent: 'center', }} fluid>
               <Card css={{ m: '$6', p: "$6", mw: "400px" }}>
                 <Card.Header>
-                  <img
-                    alt="nextui logo"
-                    src="https://media.licdn.com/dms/image/C560BAQHnOtmYTOvWPw/company-logo_200_200/0/1671785697940?e=1681344000&v=beta&t=RqenS7HhQ8gYG3oLAQjT2uXH_OBaqOzZoga2gI4bdT4"
-                    width="54px"
-                    height="54px"
+                  <Image
+                    className={styles.profile}
+                    src="/profile_Thanachot.jpg"
+                    alt="Picture of the author"
+                    width={54}
+                    height={54}
                   />
+
                   <Grid.Container css={{ pl: "$6" }}>
                     <Grid xs={12}>
                       <Text h4 css={{ lineHeight: "$xs" }}>
