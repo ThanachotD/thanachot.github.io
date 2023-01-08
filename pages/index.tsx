@@ -32,44 +32,44 @@ import { FaNodeJs } from 'react-icons/fa';
 
 
 export default function App() {
-  
+
   const list = [
     {
       role: "UX/UI Design and IoT Developer",
       title: "Meplug",
       img: "/mepluglogo.png",
-      description : "Meplug is a smart plug that can be controlled by voice and mobile application.",
+      description: "Meplug is a smart plug that can be controlled by voice and mobile application.",
 
     },
     {
       role: "Fullstack Developer",
       title: "Mypark",
       img: "/myparklogo.png",
-      description : "Mypark is a smart parking system that can be show parking lot's free and can used in mobile application.",
+      description: "Mypark is a smart parking system that can be show parking lot's free and can used in mobile application.",
     },
     {
       role: "Fronted Developer",
       title: "Today",
       img: "/todaylogo.png",
-      description : "Today App is a mobile application that can send message to your friend and can use in mobile application."
+      description: "Today App is a mobile application that can send message to your friend and can use in mobile application."
     },
     {
       role: "Fronted Developer",
       title: "Welendar",
       img: "/welendarlogo.png",
-      description : "Welendar is a mobile application that can show your schedule and can use in mobile application."
+      description: "Welendar is a mobile application that can show your schedule and can use in mobile application."
     },
     {
       role: "UX/UI Design",
       title: "Gather",
       img: "/gatherlogo.png",
-      description : " Gather is a mobile application that can booking a activities in university "
+      description: " Gather is a mobile application that can booking a activities in university "
     },
     {
       role: "UX/UI Design",
       title: "Carish",
       img: "/carishlogo.png",
-      description : " Carish is a mobile application that can show your health quality and can chat with doctor"
+      description: " Carish is a mobile application that can show your health quality and can chat with doctor"
     }
   ];
   const router = useRouter()
@@ -163,31 +163,31 @@ export default function App() {
               </code>
             </Row>
             <Row gap={0} style={{ justifyContent: 'center', }} fluid>
-            <Card css={{ m: '$6', p: "$6", mw: "400px" }}>
-                  <Card.Header>
-                    <img
-                      alt="nextui logo"
-                      src="https://media.licdn.com/dms/image/C560BAQHnOtmYTOvWPw/company-logo_200_200/0/1671785697940?e=1681344000&v=beta&t=RqenS7HhQ8gYG3oLAQjT2uXH_OBaqOzZoga2gI4bdT4"
-                      width="54px"
-                      height="54px"
-                    />
-                    <Grid.Container css={{ pl: "$6" }}>
-                      <Grid xs={12}>
-                        <Text h4 css={{ lineHeight: "$xs" }}>
-                          Digital Trainee
-                        </Text>
-                      </Grid>
-                      <Grid xs={12}>
-                        <Text css={{ color: "$accents8" }}> WEDO - SCG Cement-Building Materials</Text>
-                      </Grid>
-                    </Grid.Container>
-                  </Card.Header>
-                  <Card.Body css={{ py: "$2" }}>
-                    <Text>
-                      Research and Development IoT smart outlet and application services for ev user live in condominuim.
-                    </Text>
-                  </Card.Body>
-                </Card>
+              <Card css={{ m: '$6', p: "$6", mw: "400px" }}>
+                <Card.Header>
+                  <img
+                    alt="nextui logo"
+                    src="https://media.licdn.com/dms/image/C560BAQHnOtmYTOvWPw/company-logo_200_200/0/1671785697940?e=1681344000&v=beta&t=RqenS7HhQ8gYG3oLAQjT2uXH_OBaqOzZoga2gI4bdT4"
+                    width="54px"
+                    height="54px"
+                  />
+                  <Grid.Container css={{ pl: "$6" }}>
+                    <Grid xs={12}>
+                      <Text h4 css={{ lineHeight: "$xs" }}>
+                        Digital Trainee
+                      </Text>
+                    </Grid>
+                    <Grid xs={12}>
+                      <Text css={{ color: "$accents8" }}> WEDO - SCG Cement-Building Materials</Text>
+                    </Grid>
+                  </Grid.Container>
+                </Card.Header>
+                <Card.Body css={{ py: "$2" }}>
+                  <Text>
+                    Research and Development IoT smart outlet and application services for ev user live in condominuim.
+                  </Text>
+                </Card.Body>
+              </Card>
             </Row>
             <br />
 
@@ -195,42 +195,43 @@ export default function App() {
               <code className={styles.code} >
                 Experiences in Projects
               </code>
-              
+
             </Row>
             <br />
             <Row gap={0} style={{ justifyContent: 'center', }} fluid>
-              
-              <Grid.Container gap={2} justify="flex-start">
+
+              <Grid.Container gap={2} justify="center">
                 {list.map((item, index) => (
-                  <Grid xs={12} sm={2} key={index}>
-                  <Card css={{ m: '$6', p: "$6", mw: "400px" }} isPressable>
-                  <Card.Header>
-                    <img
-                      alt="nextui logo"
-                      src={item.img}
-                      width="64px"
-                      height="64px"
-                    />
-                    <Grid.Container css={{ pl: "$6" }}>
-                      <Grid xs={12} justify="space-between" >
-                        <Text h5 css={{ lineHeight: "$xs" }} >
-                          {item.title} 
-                        </Text>
-                        <Badge color="success" variant={"flat"}> complete </Badge> 
-                      </Grid>
-                      <Grid xs={12} css={{textAlign:"left"}}>
-                        <Text css={{ color: "$accents8" }} size={12}> {item.role} </Text>
-                      </Grid>
-                    </Grid.Container>
-                  </Card.Header>
-                  <Card.Body css={{ py: "$2" }}>
-                    <Text size={12}>
-                    {item.description}</Text>
-                  </Card.Body>
-                  <Card.Footer>
-                  <Button className={styles.btn2} onClick={handleClick}>View</Button>
-                  </Card.Footer>
-                </Card>
+                  <Grid xs={12} sm={2} key={index} justify="center">
+                    <Card css={{ m: '$6', p: "$6", mw: "400px" }} isPressable>
+                      <Card.Header>
+                        <Image
+                          className={styles.profile}
+                          src={item.img}
+                          alt="Picture of the author"
+                          width={500}
+                          height={500}
+                        />
+                        <Grid.Container css={{ pl: "$6" }}>
+                          <Grid xs={12} justify="space-between" >
+                            <Text h5 css={{ lineHeight: "$xs" }} >
+                              {item.title}
+                            </Text>
+                            <Badge color="success" variant={"flat"}> complete </Badge>
+                          </Grid>
+                          <Grid xs={12} css={{ textAlign: "left" }}>
+                            <Text css={{ color: "$accents8" }} size={12}> {item.role} </Text>
+                          </Grid>
+                        </Grid.Container>
+                      </Card.Header>
+                      <Card.Body css={{ py: "$2" }}>
+                        <Text size={12}>
+                          {item.description}</Text>
+                      </Card.Body>
+                      <Card.Footer>
+                        <Button className={styles.btn2} onClick={handleClick}>View</Button>
+                      </Card.Footer>
+                    </Card>
                   </Grid>
                 ))}
               </Grid.Container>
