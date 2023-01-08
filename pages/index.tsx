@@ -92,8 +92,8 @@ export default function App() {
           className={styles.profile}
           src="/profile_Thanachot.jpg"
           alt="Picture of the author"
-          width={500}
-          height={500}
+          width={100}
+          height={100}
         />
         <h1 className={styles.title}>
           Thanachot Wongmetin
@@ -165,9 +165,8 @@ export default function App() {
             <Row gap={0} style={{ justifyContent: 'center', }} fluid>
               <Card css={{ m: '$6', p: "$6", mw: "400px" }}>
                 <Card.Header>
-                  <Image
-                    className={styles.profile}
-                    src="/profile_Thanachot.jpg"
+                <Image
+                    src={'/wedologo.jpg'}
                     alt="Picture of the author"
                     width={54}
                     height={54}
@@ -208,11 +207,11 @@ export default function App() {
                     <Card css={{ m: '$6', p: "$6", mw: "400px" }} isPressable>
                       <Card.Header>
                         <Image
-                          className={styles.profile}
+                    
                           src={item.img}
                           alt="Picture of the author"
-                          width={500}
-                          height={500}
+                          width={54}
+                          height={54}
                         />
                         <Grid.Container css={{ pl: "$6" }}>
                           <Grid xs={12} justify="space-between" >
