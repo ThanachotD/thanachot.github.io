@@ -88,7 +88,7 @@ export default function Home() {
             </Link>
           </center>
           <code className={styles.code} >
-            Skills&Experiencs
+            Skills
           </code>
           <Container gap={1}>
             <Row gap={0} style={{ justifyContent: 'center' }} >
