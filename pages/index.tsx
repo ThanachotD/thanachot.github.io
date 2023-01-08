@@ -26,6 +26,9 @@ import {
   SiCss3,
   SiFigma,
   SiDocker,
+  SiGithub,
+  SiLinkedin,
+  SiFacebook,
 
 } from 'react-icons/si';
 import { FaNodeJs } from 'react-icons/fa';
@@ -116,9 +119,9 @@ export default function App() {
           </code>
           <p className={styles.introduce}>
             Thanachot.won@gmail.com </p>
-          <Link href="https://github.com/ThanachotD" ><i className="bi bi-github" /></Link>
-          <Link href="https://www.linkedin.com/in/thanachot-wongmetin-94bb49210/" ><i className="bi bi-linkedin" /></Link>
-          <Link href="https://www.facebook.com/profile.php?id=100005890065983" ><i className="bi bi-facebook" /></Link>
+          <Link href="https://github.com/ThanachotD" ><SiGithub/></Link>
+          <Link href="https://www.linkedin.com/in/thanachot-wongmetin-94bb49210/" ><SiLinkedin /></Link>
+          <Link href="https://www.facebook.com/profile.php?id=100005890065983" ><SiFacebook /></Link>
           <a className="bi bi-envelope-fill" onClick={() => router.push('mailto:Thanachot.won@gmail.com')}></a>
           {/*<a href='resume.pdf'>resume</a> */}
           <center>
