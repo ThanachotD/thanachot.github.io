@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router'
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image'
-import { Card, Grid, Text, Button, Container, Badge, Avatar, Row, Col, Spacer } from "@nextui-org/react";
+import { Card, Grid, Text, Button, Container, Badge, Avatar, Row, Col, Spacer , Tooltip } from "@nextui-org/react";
 import { Navbar } from "@nextui-org/react";
 
 import {
@@ -28,9 +28,11 @@ import {
   SiDocker,
   SiGithub,
   SiLinkedin,
-  SiFacebook,
-
+  SiFacebook
 } from 'react-icons/si';
+import {MdEmail} from 'react-icons/md'
+import {AiTwotoneMail} from 'react-icons/ai'
+import {BsFileEarmarkPdfFill  } from 'react-icons/bs'
 import { FaNodeJs } from 'react-icons/fa';
 
 
@@ -119,15 +121,15 @@ export default function App() {
           </code>
           <p className={styles.introduce}>
             Thanachot.won@gmail.com </p>
-          <Link href="https://github.com/ThanachotD" ><SiGithub/></Link>
+          <Link href="https://github.com/ThanachotD"><SiGithub/></Link>
           <Link href="https://www.linkedin.com/in/thanachot-wongmetin-94bb49210/" ><SiLinkedin /></Link>
           <Link href="https://www.facebook.com/profile.php?id=100005890065983" ><SiFacebook /></Link>
-          <a className="bi bi-envelope-fill" onClick={() => router.push('mailto:Thanachot.won@gmail.com')}></a>
+          <MdEmail onClick={() => router.push('mailto:Thanachot.won@gmail.com')}/>
           {/*<a href='resume.pdf'>resume</a> */}
           <center>
             <Link href="resume.pdf" >
               <Button className={styles.btn2}>
-                <i className="bi bi-file-earmark-pdf-fill" /> &nbsp;  Resume
+                <BsFileEarmarkPdfFill/> &nbsp;  Resume
               </Button>
             </Link>
           </center>
@@ -203,10 +205,13 @@ export default function App() {
             </Row>
             <br />
             <Row gap={0} style={{ justifyContent: 'center', }} fluid>
-
+            
+      
+    
               <Grid.Container gap={2} justify="center">
                 {list.map((item, index) => (
                   <Grid xs={12} sm={2} key={index} justify="center">
+                    <Tooltip trigger="click" content={"Please wait for information about project or get resume or send mail to me"}>
                     <Card css={{ m: '$6', p: "$6", mw: "400px" }} isPressable>
                       <Card.Header>
                         <Image
@@ -236,6 +241,7 @@ export default function App() {
                         <Button className={styles.btn2} onClick={handleClick}>View</Button>
                       </Card.Footer>
                     </Card>
+                    </Tooltip>
                   </Grid>
                 ))}
               </Grid.Container>
