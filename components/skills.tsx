@@ -27,6 +27,12 @@ import { FaNodeJs } from 'react-icons/fa';
 import styles from '../styles/Home.module.css'
 
 export default function Skills() {
+    const [visible, setVisible] = React.useState(false);
+    const handler = () => setVisible(true);
+    const closeHandler = () => {
+        setVisible(false);
+        console.log("closed");
+    };
   return (
     <>
             <Row gap={0} style={{ justifyContent: 'center' }} >

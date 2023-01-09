@@ -74,7 +74,8 @@ export default function App() {
 
      <main style={{overflow:"hidden"}}>
      <Container gap={1} wrap={'wrap'} css={{ overflow: "hidden" ,marginBottom:'$2xl',marginTop:'$2xl',padding:'$11'}}>
-        <Row gap={0} style={{ justifyContent: 'center' }}>
+        
+        <Row  style={{ justifyContent: 'center' }}>
           <Image
             className={styles.profile}
             src="/profile_Thanachot.jpg"
@@ -83,7 +84,7 @@ export default function App() {
             height={100}
           />
         </Row>
-        <Row gap={0} style={{ justifyContent: 'center' }}>
+        <Row  style={{ justifyContent: 'center' }}>
           <h1 className={styles.title}>
             Thanachot Wongmetin
           </h1>
@@ -104,6 +105,7 @@ export default function App() {
             </code></Row>
             <Row style={{ justifyContent: 'center' }}><p className={styles.introduce}>
               Thanachot.won@gmail.com </p></Row>
+        
         <Skills />
         <Wedo />
         <Projects />

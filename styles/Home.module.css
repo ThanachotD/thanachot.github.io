@@ -49,6 +49,10 @@
   text-align: center;
 }
 
+.row{
+  flex-direction: column;
+  justify-items: center;
+}
 .description {
   margin: 0rem 0rem 0rem 0rem;
   line-height: 1.5;
@@ -100,6 +104,8 @@
   background-color: #162B45;
 }
 
+
+
 .introduce2 {
   padding: 0.15rem;
   font-size: 0.8rem;
@@ -128,6 +134,7 @@
   filter: grayscale(30%);
 }
 
+
 .btn {
   padding: 1rem;
   text-align: left;
@@ -154,6 +161,17 @@
   background-color: #ffffff;
 }
 
+.icon {
+  transition: color 0.15s ease, border-color 0.15s ease;
+  transition: all .2s ease-in-out;
+}
+
+.icon:hover,
+.icon:focus,
+.icon:active {
+  transition: color 0.15s ease, border-color 0.15s ease;
+  transform: scale(1.2);
+}
 .btn2 {
   padding: .5rem;
   font-size: 0.8rem;
