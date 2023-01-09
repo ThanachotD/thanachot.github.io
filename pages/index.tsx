@@ -73,7 +73,7 @@ export default function App() {
       </Head>
 
      <main style={{overflow:"hidden"}}>
-     <Container gap={1} wrap={'wrap'} css={{ overflow: "hidden" , margin:'lg',marginTop:'$10'}}>
+     <Container gap={1} wrap={'wrap'} css={{ overflow: "hidden" , margin:'',marginTop:'$10'}}>
         <Row gap={0} style={{ justifyContent: 'center' }}>
           <Image
             className={styles.profile}
@@ -109,7 +109,6 @@ export default function App() {
         <Projects />
       </Container>
      </main>
-
     </>
   )
 }
