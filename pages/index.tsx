@@ -105,7 +105,14 @@ export default function App() {
             </code></Row>
             <Row style={{ justifyContent: 'center' }}><p className={styles.introduce}>
               Thanachot.won@gmail.com </p></Row>
-        
+              <Row style={{ justifyContent: 'center'}}>
+              <Link href="resume.pdf" >
+              <Button className={styles.btn2}>
+                <i className="bi bi-file-earmark-pdf-fill" /> &nbsp;  Resume
+              </Button>
+            </Link>
+            </Row>
+            <br/>
         <Skills />
         <Wedo />
         <Projects />

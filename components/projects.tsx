@@ -86,13 +86,6 @@ export default function Projects() {
             figma:"https://www.figma.com/file/wmXwhXxRcMSYXk5DqGhIr0/Untitled?node-id=1%3A10749"
         }
     ];
-
-    const router = useRouter()
-
-    function handleClick() {
-        router.push('/projects');
-    }
-
     return (
         <><Row gap={0} style={{ justifyContent: 'center' }} >
             <code className={styles.code} >
