@@ -18,45 +18,6 @@ import Skills from '../components/skills';
 import Projects from '../components/projects';
 
 export default function App() {
-  const list = [
-    {
-      role: "UX/UI Design and IoT Developer",
-      title: "Meplug",
-      img: "/mepluglogo.png",
-      description: "Meplug is a smart plug that can be controlled by voice and mobile application.",
-
-    },
-    {
-      role: "Fullstack Developer",
-      title: "Mypark",
-      img: "/myparklogo.png",
-      description: "Mypark is a smart parking system that can be show parking lot's free and can used in mobile application.",
-    },
-    {
-      role: "Fronted Developer",
-      title: "Today",
-      img: "/todaylogo.png",
-      description: "Today App is a mobile application that can send message to your friend and can use in mobile application."
-    },
-    {
-      role: "Fronted Developer",
-      title: "Welendar",
-      img: "/welendarlogo.png",
-      description: "Welendar is a mobile application that can show your schedule and can use in mobile application."
-    },
-    {
-      role: "UX/UI Design",
-      title: "Gather",
-      img: "/gatherlogo.png",
-      description: " Gather is a mobile application that can booking a activities in university "
-    },
-    {
-      role: "UX/UI Design",
-      title: "Carish",
-      img: "/carishlogo.png",
-      description: " Carish is a mobile application that can show your health quality and can chat with doctor"
-    }
-  ];
   const router = useRouter()
 
   function handleClick() {
