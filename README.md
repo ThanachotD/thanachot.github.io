@@ -9,7 +9,7 @@ This project is my personal website that presented about experiences in my life
 ## Technologies
 Project is created with:
 * NextJS
-* Boostrap
+* NextUI
 * Deployed on Vercel
 	
 ## Setup
