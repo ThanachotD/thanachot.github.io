@@ -2,10 +2,19 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
+import { SiGithub ,SiLinkedin} from 'react-icons/si'
+import { FaFile } from 'react-icons/fa'
+import Link from 'next/link';
+import { useRouter } from 'next/router'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+  const router = useRouter();
+
+  function getResume() {
+    router.push(`/resume.pdf`);
+  }
   return (
     <>
       <Head>
@@ -15,110 +24,31 @@ export default function Home() {
         <link rel="icon" href="/thanachot.ico" />
         <meta name="description" content="A web portfolio is a digital collection showcasing professional or creative skills, experiences, and achievements. It is presented on a website and can include resumes and work samples. It is used to showcase abilities and accomplishments to potential employers, clients, or partners."></meta>
       </Head>
-      <main className={styles.main}>
-        <div className={styles.description}>
-          <p>
-            Get started by editing&nbsp;
-            <code className={styles.code}>pages/index.tsx</code>
-          </p>
-          <div>
-            <a
-              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              By{' '}
-              <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                className={styles.vercelLogo}
-                width={100}
-                height={24}
-                priority
-              />
-            </a>
-          </div>
+      <main className='bg-[#101925]'>
+
+        <div className="container mx-auto">
+        <div className="grid justify-items-center content-center items-center  d:h-full h-screen">
+        <div><Image
+            className={styles.profile}
+            src="/profile_Thanachot.jpg"
+            alt="Picture of the author"
+            width={300}
+            height={300}/></div> 
+            <div className='text-[#CFD1D3] text-xs m-2 mb-4 font-thin'>Hello , I am </div>
+            <div className='text-[#08FDD8] text-2xl font-2xl  font-bold sm:text-4xl' >Thanachot Wongmetin</div>
+            {/* <div className='text-[#CFD1D3] text-sm m-2 font-thin sm:text-sm' >A Software Engineer with excellent problem-solving and troubleshooting skills and the ability to perform well in a team, having hands-on experience working on projects as a full-stack developer and looking for new challenges and opportunities to make innovations.</div>  */}
+            <div className='text-[#CFD1D3] text-sm m-2 font-thin sm:text-sm'>Software Engineering · UX/UI Design · Photographer </div>
+            <div className='text-[#CFD1D3] text-sm m-2 font-thin'> </div>
+            
+            <div className="flex items-center ...">
+            <button className="text-[#CFD1D3] mx-3" ><Link href={"https://github.com/ThanachotD"}><SiGithub size={25} className='hover:text-[#000]'/></Link></button>
+            <button  className="text-[#CFD1D3]  mx-3"><Link href={'https://www.linkedin.com/in/thanachot-wongmetin-94bb49210/'}><SiLinkedin  size={25} className='hover:text-[#007AEA]'/>  </Link></button>
+            <button onClick={getResume} className="bg-[#08FDD8] mx-4 mr-2 hover:bg-[#FFF]  text-[#000000] font-bold text-sm py-2 px-6 rounded-full  flex flex-row">
+            <FaFile size={18} className='mx-1'/> Resume </button> 
+            </div>
         </div>
-
-        <div className={styles.center}>
-          <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-          />
-          <div className={styles.thirteen}>
-            <Image
-              src="/thirteen.svg"
-              alt="13"
-              width={40}
-              height={31}
-              priority
-            />
-          </div>
-        </div>
-
-        <div className={styles.grid}>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Docs <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Find in-depth information about Next.js features and&nbsp;API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Learn <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Learn about Next.js in an interactive course with&nbsp;quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Templates <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Discover and deploy boilerplate example Next.js&nbsp;projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Deploy <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Instantly deploy your Next.js site to a shareable URL
-              with&nbsp;Vercel.
-            </p>
-          </a>
         </div>
       </main>
-    </>
+    </>     
   )
 }
