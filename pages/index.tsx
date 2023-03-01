@@ -39,8 +39,8 @@ export default function Home() {
             <div className='text-[#CFD1D3] text-sm m-2 font-thin sm:text-sm'>Software Engineering · UX/UI Design · Photographer </div>
             <div className='text-[#CFD1D3] text-sm m-2 font-thin'> </div>
             <div className="flex items-center ...">
-            <button className="text-[#CFD1D3] mx-3" ><Link href={"https://github.com/ThanachotD"}><SiGithub size={25} className='hover:text-[#000]'/></Link></button>
-            <button  className="text-[#CFD1D3]  mx-3"><Link href={'https://www.linkedin.com/in/thanachot-wongmetin-94bb49210/'}><SiLinkedin  size={25} className='hover:text-[#007AEA]'/>  </Link></button>
+           <Link className="text-[#CFD1D3] mx-3" href={"https://github.com/ThanachotD"}><SiGithub size={25} className='hover:text-[#000]'/></Link>
+           <Link className="text-[#CFD1D3]  mx-3" href={'https://www.linkedin.com/in/thanachot-wongmetin-94bb49210/'}><SiLinkedin  size={25} className='hover:text-[#007AEA]'/>  </Link>
             <button onClick={getResume} className="bg-[#08FDD8] mx-4 mr-2 hover:bg-[#FFF]  text-[#000000] font-bold text-sm py-2 px-6 rounded-full  flex flex-row">
             <FaFile size={18} className='mx-1'/> Resume </button> 
             </div>
