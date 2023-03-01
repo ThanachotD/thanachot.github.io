@@ -92,7 +92,7 @@ export default function Home() {
                 <div className="p-8 bg-[#162B45]">
                   <div className="uppercase tracking-wide text-lg text-[#08FDD8]  font-semibold ">WEDO  SCG </div>
                   <a href="#" className="block mt-1 text-sm leading-tight text-white font-semibold hover:underline">Present</a>
-                  <p className="mt-2 text-slate-500 text-sm text-justify text-gray-400 font-thin ">Developed an electricity service for EV users in condominiums that allows everyone to use a portable charger with a smart
+                  <p className="mt-2 text-slate-500 text-sm text-justify text-white font-thin ">Developed an electricity service for EV users in condominiums that allows everyone to use a portable charger with a smart
 outlet.</p>
                 </div>
               </div>
@@ -104,7 +104,7 @@ outlet.</p>
                 <div className="p-8 bg-[#162B45]">
                   <div className="uppercase tracking-wide text-lg text-[#08FDD8]  font-semibold">GDSC@TU</div>
                   <a href="#" className="block mt-1 text-sm leading-tight font-semibold text-white hover:underline">Present</a>
-                  <p className="mt-2  text-sm text-justify text-gray-400 font-thin">Volunteers who are passionate about helping people and their peers learn google technologies</p>
+                  <p className="mt-2  text-sm text-justify text-white font-thin">Volunteers who are passionate about helping people and their peers learn google technologies</p>
                 </div>
               </div>
             </div>
