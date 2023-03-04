@@ -26,11 +26,11 @@ export default function Home() {
         <link rel="icon" href="/thanachot.ico" />
         <meta name="description" content="A web portfolio is a digital collection showcasing professional or creative skills, experiences, and achievements. It is presented on a website and can include resumes and work samples. It is used to showcase abilities and accomplishments to potential employers, clients, or partners."></meta>
       </Head>
-      <main className='scroll-smooth font-sans antialiased  d:h-full h-screen'>
-      <div className="grid grid-flow-row auto-rows-max bg-[#101925]">
+      <main className='scroll-smooth font-sans antialiased '>
+      <div className="grid grid-flow-row auto-rows-max bg-[#101925]   d:h-full h-screen pt-24">
         
         <div className="container mx-auto">
-        <div className="grid justify-items-center content-center items-center  d:h-full h-screen">
+        <div className="grid justify-items-center content-center items-center">
         <div><Image
             className={styles.profile}
             src="/profile_Thanachot.jpg"
@@ -51,7 +51,7 @@ export default function Home() {
           </div>
           </div>
           <div className="container mx-auto ">
-          <div className="grid justify-items-center content-center items-center  d:h-full h-screen">
+          <div className="grid justify-items-center content-center items-center">
         
           <div className="flex flex-wrap flex-row justify-items-center content-center items-center bg-[#101925]">
           <div className="basis-full grid grid-flow-row auto-rows-max sm:basis-1/2 p-6">
