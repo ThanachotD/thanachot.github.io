@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 html {
-    overflow-x: hidden;
+    overflow: hidden;
     font-family: sans-serif;
     line-height: 1.8;
   }
